@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int enterenNummber;
+    int oddCounter=0;
+    int result;
+    int intermediateResult;
+    int counter=1;
+    std::cout << "enter negative number" << std::endl;
+    std::cin >> enterenNummber;
+    if(enterenNummber>=0){
+        std::cout << "not corect number" << std::endl;
+        return 0;
+    }
+    if(enterenNummber<0){
+        for(int i=1;i<-enterenNummber;i++){
+            intermediateResult=enterenNummber+(counter+oddCounter);
+            result=intermediateResult+result;
+            counter++;
+            oddCounter++;
+            i++;
+        }
+    }
+    cout<<result;
+    return 0;
+}
